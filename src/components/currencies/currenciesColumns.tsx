@@ -11,7 +11,7 @@ const currenciesColumns: GridColDef[] = [
     },
     {
         field: 'nominal',
-        headerName: 'Номинал, руб.',
+        headerName: 'Номинал',
         width: 150,
     },
     {
@@ -26,7 +26,7 @@ const currenciesColumns: GridColDef[] = [
     },
     {
         field: 'vunitRate',
-        headerName: 'Цена за 1 руб.',
+        headerName: 'Цена за 1',
         width: 150,
     },
     {

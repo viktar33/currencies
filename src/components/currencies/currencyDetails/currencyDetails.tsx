@@ -75,7 +75,7 @@ const CurrencyDetails = () => {
                 </CoreTextField>
             </div>
             <div>
-                <InputLabel>Цена за 1 рубль</InputLabel>
+                <InputLabel>Цена за 1</InputLabel>
                 <CoreTextField
                     value={data?.vunitRate}
                 >
