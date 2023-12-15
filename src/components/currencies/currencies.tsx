@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {DataGrid} from "@mui/x-data-grid";
 import {IMetaData} from "../../models/metaData";
 import {ICurrency} from "../../models/currency";
-import {Button, debounce} from "@mui/material";
+import {Button, debounce, TextField} from "@mui/material";
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import currenciesColumns from "./currenciesColumns";
@@ -125,7 +125,8 @@ const Currencies = () => {
                 </>
             }
             <h2>Курсы валют на {today.toString()}</h2>
-            <CoreTextField
+            <TextField
+                style={{marginBottom:'1%',marginTop:'1%'}}
                 fullWidth
                 value={searchTerm || ""}
                 label="Поиск по названию валюты..."
